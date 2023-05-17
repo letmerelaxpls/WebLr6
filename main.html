@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubaleh site</title>
+    <meta name="description" content="Bubaleh">
+    <meta name="author" content="Diasamidze Bubaleh">
+    <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+
+    <style>
+        body {
+            background: #E5E5E5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagecover"></div>
+    <div class="contactus-block">
+        <span class="contactus">Contact Us</span>
+    </div>
+    <div class="photoUpRight"></div>
+    <div class="mainMenu">
+        <div class=Logo>
+            <div class="LogoP1"></div>
+            <div class="LogoP2"></div>
+        </div>
+        <span class="Welcoming">Welcome to site of ordering food Bubaleh!</span>
+        <span class="WelcomeDesc">Here you can find all the information you need about this food chain and order food.</span>
+        <a href="./about.html" class=AboutusButton>
+            <span class="Aboutus">About Us</span>
+        </a>
+        <a href="./shop.html" class=OrdernowButton>
+            <span class="Ordernow">Order now</span>
+        </a>
+    </div>
+    <div class="contacting">
+        <div class=Contactinfo>
+            <span class="phonenumber">853-195-9918</span>
+            <span class="emailinfo">info@bubaleh.com</span>
+            <span>500 Terry Francine Street, San Francisco, CA 94158</span>
+        </div>
+        <div class=ContactingInput>
+            <span class="FirstName">First name</span>
+            <div class="input1">
+                <input class="beautifulInput" type="text" />
+            </div>
+            <span class="LastName">Last name</span>
+            <div class="input2">
+                <input class="beautifulInput" type="text" />
+            </div>
+            <span class="Email">Email</span>
+            <div class="input3">
+                <input class="beautifulInput1" type="text" />
+            </div>
+            <span class="Message">Message</span>
+            <div class="input4">
+                <input class="beautifulInput1" type="text" />
+            </div>
+        </div>
+        <div class="SendButton">
+            <span class="Send">Send</span>
+        </div>
+        <div class="OpeningInfo">
+            <span class="OpeningHours">Opening Hours</span>
+            <span class="MonFri">
+                Mon - Fri
+                8:00 am – 8:00 pm
+            </span>
+            <span class="Saturday">
+                Saturday
+                9:00 am – 7:00 pm
+            </span>
+            <span class="Sunday">
+                Sunday
+                9:00 am – 9:00 pm
+            </span>
+        </div>
+    </div>
+    <div class="photoDownLeft"></div>
+
+    <script>
+        var sendButton = document.querySelector('.SendButton');
+        var inputs = document.querySelectorAll('.beautifulInput, .beautifulInput1');
+
+        sendButton.addEventListener('click', function(event) {
+            event.preventDefault();
+
+            var isEmpty = false;
+            for (var i = 0; i < inputs.length; i++) {
+                if (inputs[i].value.trim() === '') {
+                    isEmpty = true;
+                    break;
+                }
+            }
+
+            if (isEmpty) {
+                alert('Будь ласка, заповніть рядок.');
+            } else {
+                var result = confirm('Ви впевнені, що хочете виконати відправку?');
+                if (result) {
+                }
+            }
+        });
+    </script>
+</body>
+
+</html>

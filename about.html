@@ -1,0 +1,68 @@
+<html lang="en">
+          <head>
+            <meta charset="utf-8">
+          
+            <title>Bubaleh about</title>
+            <meta name="description" content="Bubaleh about">
+            <meta name="author" content="Diasamidze Bubaleh">
+            <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="styles.css">
+            
+            <style>
+              body {background: #E5E5E5; }
+            </style>
+          
+          </head>
+          
+          <body>
+              <div class="pagecover"></div>
+              <div class="coverAboutUs">
+                  <span class="AboutUsH1">About Us</span>
+                  <span class="AboutUsH2">Finding inspiration everywhere</span>
+                  <span class="AboutP1">
+                      Welcome to our food ordering site! We are a team of people working to provide you with the most convenient and fast process of ordering and delivering food from various establishments.
+                      We understand how important it is to receive quality and delicious food on time, so we work to ensure that each of your orders is processed as quickly as possible and with the highest quality. Our partners are the best restaurants and kitchens from different cities, offering a wide selection of dishes and culinary trends.
+                      We use modern technologies and provide safe and convenient online payment. Our mission is to provide you with the most comfortable process of ordering and delivering food at any time of the day or night.
+                      Thank you for choosing our food ordering service! Please contact us if you have any questions or suggestions for improving our service. We are always ready to help you!
+                  </span>
+                  <span class="OurHistory">Our History</span>
+                  <span class="AboutP2">
+                      Our story began with a simple idea - to make the process of ordering and delivering food as comfortable and fast as possible for our customers. We were tired of spending a lot of time and effort on finding the right restaurant, placing an order and waiting for delivery. We understood that in our fast-paced world, where people prefer speed and convenience, such a process could be improved.
+                      We started our activity as a small startup that offered orders only from a few restaurants in our city. However, our service has found its supporters, and we have expanded our offer, inviting more and more restaurants and kitchens to cooperate.
+                      Today, we are happy to say that we have taken a significant step towards our goal. We cooperate with many restaurants and kitchens in different cities of the country and can offer our customers a wide selection of dishes and directions.
+                      We understand that the food ordering and delivery industry is evolving rapidly, so we are constantly improving our service and looking for new ways to improve our services. We believe that our story is just beginning, and we are happy to share our successes and achievements with you. Thank you for choosing our food ordering service, and we look forward to seeing you among our customers.
+                  </span>
+              </div>
+              <div class="TeamPhoto"></div>
+              <nav class="header">
+                  <div class="LogoHeader">
+                      <div class="LogoHeaderP1"></div>
+                      <div class="LogoHeaderP2"></div>
+                  </div>
+                  <a href="./main.html" class="MainRef">Main</a>
+              </nav>
+              <span class="divider">/</span>
+              <span class="AboutUsHeader">About Us</span>
+              <footer class="footerAboutUs">
+                  <span class="footerPhoneNumber">853-195-9918</span>
+                  <span class="footerAdress">500 Terry Francine Street, San Francisco, CA 94158</span>
+                  <span class="footerEmail">info@bubaleh.com</span>
+              </footer>
+              <script>
+                  var logoHeader = document.querySelector('.LogoHeader');
+                  var isLogoHovered = false;
+
+                  logoHeader.addEventListener('mouseenter', function () {
+                      if (!isLogoHovered) {
+                          logoHeader.style.animation = 'rotateOnce 0.5s linear';
+                          isLogoHovered = true;
+                          setTimeout(function () {
+                              logoHeader.style.animation = '';
+                              isLogoHovered = false;
+                          }, 500);
+                      }
+                  });
+              </script>
+          </body>
+</html>

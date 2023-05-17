@@ -1,130 +1,808 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
-}
-.current-time {
-    position: fixed;
-    right: 10px;
+
+body{
+	 font-family: Inter;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #fff;
-    box-shadow: 0 1px 6px rgba(32, 33, 36, 0.28);
-    padding: 0 10px;
-    height: 44px;
-    position: sticky;
-    top: 0;
-    z-index: 999;
-    position: absolute;
-    left: 0px;
-    width: 98.6vw;
-}
-.defaultSearch {
-    color: #5f6368;
-    text-decoration: none;
-    border-style: solid;
-    padding: 10px;
-    border-radius: 8px;
+@keyframes rotateOnce {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
 }
 
-.Google {
-    background-image: url(google.png);
-    background-size: cover;
-    position: absolute;
-    top: 220px;
-    width: 300px;
-    height: 100px;
+.LogoHeader:hover {
+	animation: rotateOnce 0.5s linear;
 }
 
-.picturesSearch {
-    position: absolute;
-    left: 91px;
-    color: #5f6368;
-    text-decoration: none;
-    border-style: solid;
-    padding: 10px;
-    border-radius: 8px;
+
+
+.pagecover {
+	opacity: 0.8;
+	width: 1920px;
+	height: 2160px;
+	background-image: url(images/pagecover.png);
+	background-size: cover;
 }
 
-.extendedSearch {
-    position: absolute;
-    left: 170px;
-    color: #5f6368;
-    text-decoration: none;
-    border-style: solid;
-    padding: 10px;
-    border-radius: 8px;
-}
-.ButtonSearch {
-    position: absolute;
-    top: 400px;
-    background-color: #F8F9FA;
-    border: 1px solid #f8f9fa;
-    color: #3c4043;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 11px 4px;
-    padding: 0px 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    border-radius: 4px;
-    cursor: pointer;
-}
-.ButtonSearchExtend {
-    position: absolute;
-    top: 520px;
-    background-color: #F8F9FA;
-    border: 1px solid #f8f9fa;
-    color: #3c4043;
-    font-size: 18px;
-    font-weight: bold;
-    margin: 11px 4px;
-    padding: 0px 16px;
-    line-height: 27px;
-    height: 36px;
-    min-width: 54px;
-    border-radius: 4px;
-    cursor: pointer;
+.pagecoverShop {
+	opacity: 0.8;
+	width: 1920px;
+	height: 1620px;
+	background-image: url(images/pagecover.png);
+	background-size: cover;
 }
 
-form {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    margin: 20px 0;
+.pagecoverOrder {
+	opacity: 0.8;
+	width: 1920px;
+	height: 1600px;
+	background-image: url(images/pagecover.png);
+	background-size: cover;
 }
 
-input[type="text"] {
-    border: 1px solid #dfe1e5;
-    border-radius: 24px;
-    box-shadow: none;
-    font-size: 16px;
-    height: 34px;
-    margin: 8px;
-    outline: none;
-    padding: 0 10px;
-    width: 400px;
-    max-width: 90%;
+.Logo {
+	position: absolute;
+	left: 399px;
+	top: 77px;
 }
 
-    input[type="submit"]:hover {
-        background-color: #3367d6;
-    }
-
-label {
-    font-size: 20px;
-    margin-bottom: 10px;
+.LogoP1 {
+	width: 118px;
+	height: 111px;
+	position: absolute;
+	top: 62px;
+	background-image: url(images/LogoP1.png);
+	background-size: cover;
 }
 
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.LogoP2 {
+	width: 158px;
+	height: 158px;
+	position: absolute;
+	left: 5px;
+	background-image: url(images/LogoP2.png);
+	background-size: cover;
 }
+
+.contactus-block {
+	background-color: rgba(217, 217, 217, 0.8);
+	width: 1851px;
+	height: 277px;
+	position: absolute;
+	left: 39px;
+	top: 800px;
+	border-style: solid;
+	border-width: medium;
+}
+
+.contactus {
+	position: absolute;
+	top: 100px;
+	left: 800px;
+	text-align: center;
+	font-size: 48px;
+}
+
+.photoUpRight {
+	box-shadow: 5px 0px 18px rgba(0, 0, 0, 0.8);
+	width: 960px;
+	height: 800px;
+	position: absolute;
+	left: 965px;
+	top: 0px;
+	background-image: url(images/istockphoto_487077896_612x612_1.png);
+	background-size: cover;
+	border-radius: 0px 0px 50px 50px;
+}
+
+.mainMenu {
+	box-shadow: 5px 0px 18px rgba(0, 0, 0, 0.8);
+	background-color: rgba(255, 222, 95, 1);
+	width: 960px;
+	height: 800px;
+	position: absolute;
+	top: 0px;
+	border-radius: 0px 0px 50px 50px;
+}
+
+.AboutusButton {
+	background-color: rgba(255, 250, 250, 1);
+	width: 168px;
+	height: 53px;
+	position: absolute;
+	left: 396px;
+	top: 590px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.Aboutus {
+	color: rgba(255, 92, 0, 1);
+	width: 84px;
+	height: 20px;
+	position: absolute;
+	left: 42px;
+	top: 17px;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.Welcoming {
+	width: 637px;
+	position: absolute;
+	left: 162px;
+	top: 259px;
+	text-align: center;
+	font-size: 40px;
+}
+
+.WelcomeDesc {
+	width: 693px;
+	position: absolute;
+	left: 134px;
+	top: 410px;
+	text-align: center;
+	font-size: 20px;
+}
+
+.OrdernowButton {
+	background-color: rgba(255, 250, 250, 1);
+	width: 168.63636779785156px;
+	height: 53px;
+	position: absolute;
+	left: 396px;
+	top: 513px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.Ordernow {
+	color: rgba(255, 91, 0, 1);
+	width: 84px;
+	position: absolute;
+	left: 42px;
+	top: 17px;
+	text-align: center;
+}
+
+.contacting {
+	background-color: rgba(217, 217, 217, 0.8);
+	width: 960px;
+	height: 1085px;
+	position: absolute;
+	left: 960px;
+	top: 1079px;
+	border-style: solid;
+	border-width: medium;
+}
+
+.photoDownLeft {
+	width: 960px;
+	height: 1087px;
+	position: absolute;
+	top: 1078px;
+	background-image: url(images/fast_food_1559854913_1.png);
+	background-size: cover;
+	border-style: solid;
+	border-width: medium;
+}
+
+.ContactingInput {
+	width: 562px;
+	height: 254px;
+	position: absolute;
+	left: 220px;
+	top: 220px;
+}
+
+.Message {
+	position: absolute;
+	left: 10px;
+	top: 160px;
+}
+
+.beautifulInput {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+}
+
+.beautifulInput:active, :hover, :focus {
+		outline: 0;
+		outline-offset: 0;
+}
+
+.beautifulInput1 {
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid black;
+	width: 470px;
+}
+
+.beautifulInput1:active, :hover, :focus {
+		outline: 0;
+		outline-offset: 0;
+}
+
+.input1 {
+	position: absolute;
+	left: 10px;
+	top: 45px;
+}
+
+.input2 {
+	position: absolute;
+	left: 305px;
+	top: 45px;
+}
+
+.input3 {
+	position: absolute;
+	left: 10px;
+	top: 130px;
+}
+
+.input4 {
+	color: rgba(0, 0, 0, 1);
+	width: 67px;
+	height: 19px;
+	position: absolute;
+	left: 10px;
+	top: 196px;
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.LastName {
+	position: absolute;
+	left: 305px;
+	text-align: center;
+}
+
+.Email {
+	position: absolute;
+	left: 10px;
+	top: 78px;
+}
+
+.FirstName {
+	position: absolute;
+	text-align: center;
+	left: 10px;
+}
+
+.Contactinfo {
+	position: absolute;
+	left: 250px;
+	top: 50px;
+	width: 500px;
+	height: 100px;
+}
+
+.emailinfo {
+	position: absolute;
+	top: 36px;
+}
+
+.phonenumber {
+	position: absolute;
+	left: 283px;
+	top: 36px;
+}
+
+.SendButton {
+	top: 500px;
+	background-color: rgba(248, 134, 29, 1);
+	width: 139px;
+	height: 40px;
+	position: absolute;
+	left: 220px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.Send {
+	color: rgba(255, 255, 255, 1);
+	position: absolute;
+	left: 50px;
+	top: 10px;
+}
+
+.OpeningInfo {
+	position: absolute;
+	left: 220px;
+	top: 650px;
+	width: 250px;
+	height: 250px;
+}
+
+.OpeningHours {
+	font-size: 32px;
+}
+
+.MonFri {
+	width: 142px;
+	position: absolute;
+	left: 40px;
+	top: 60px;
+	text-align: center;
+}
+
+.Saturday {
+	width: 140px;
+	position: absolute;
+	left: 40px;
+	top: 110px;
+	text-align: center;
+}
+
+.Sunday {
+	width: 130px;
+	position: absolute;
+	left: 40px;
+	top: 165px;
+	text-align: center;
+}
+
+.coverAboutUs {
+	background-color: rgba(249.93984192609787, 249.93984192609787, 249.93984192609787, 1);
+	opacity: 0.8;
+	width: 1920px;
+	height: 2009px;
+	position: absolute;
+	top: 75px;
+}
+
+.TeamPhoto {
+	width: 1222px;
+	height: 732px;
+	position: absolute;
+	left: 344px;
+	top: 705px;
+	background-image: url(images/team.png);
+	background-size: cover;
+}
+
+.AboutP1 {
+	width: 1231px;
+	height: 290px;
+	position: absolute;
+	left: 344px;
+	top: 299px;
+	font-size: 24px;
+}
+
+.AboutUsH1 {
+	position: absolute;
+	left: 815px;
+	top: 150px;
+	font-size: 64px;
+}
+
+.AboutUsH2 {
+	position: absolute;
+	left: 778px;
+	top: 230px;
+	font-size: 24px;
+}
+
+.OurHistory {
+	position: absolute;
+	left: 775px;
+	top: 1450;
+	font-size: 64px;
+}
+
+.AboutP2 {
+	width: 1231px;
+	position: absolute;
+	left: 340px;
+	top: 1550;
+	font-size: 24px;
+}
+
+.AboutUsHeader {
+	position: absolute;
+	left: 247px;
+	top: 55px;
+	font-size: 24px;
+}
+
+.ShawermaInfo {
+	position: absolute;
+	left: 700px;
+	top: 150px;
+	width: 600px;
+	height: 750px;
+}
+
+.NameBlock {
+	width: 486px;
+	height: 187px;
+	position: absolute;
+	left: 60px;
+	top: 40px;
+	box-shadow: 7px 10px 40px rgba(0, 0, 0, 0.8);
+	background-color: rgba(255, 255, 255, 1);
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.Name {
+	position: absolute;
+	left: 35px;
+	top: 42px;
+	font-size: 36px;
+}
+
+.Price {
+	width: 133px;
+	height: 29px;
+	position: absolute;
+	left: 10px;
+	top: 109px;
+	text-align: center;
+	font-size: 24px;
+}
+
+.Shawerma {
+	width: 621px;
+	height: 658px;
+	position: absolute;
+	left: 75px;
+	top: 200px;
+	background-image: url(images/Shaurma.png);
+	background-size: cover;
+}
+
+.Amount {
+	position: absolute;
+	left: 80px;
+	top: 250px;
+	font-size: 24px;
+}
+
+.AmountInput {
+	width: 87px;
+	height: 51px;
+	position: absolute;
+	left: 80px;
+	top: 290px;
+}
+
+.AddToCartButton {
+	background-color: rgba(255, 122.3999972641468, 0, 1);
+	width: 444px;
+	height: 61px;
+	position: absolute;
+	left: 80px;
+	top: 370px;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	border-style: solid;
+	border-width: medium;
+}
+
+.AddToCart {
+	color: rgba(255, 255, 255, 1);
+	width: 127px;
+	height: 29px;
+	position: absolute;
+	left: 150;
+	text-align: center;
+	font-size: 24px;
+}
+
+.Description {
+	position: absolute;
+	left: 378px;
+	top: 1010px;
+	font-size: 40px;
+}
+
+.divider2 {
+	position: absolute;
+	left: 366px;
+	top: 55px;
+	font-size: 24px;
+}
+
+.HeaderMahentohen {
+	position: absolute;
+	left: 385px;
+	top: 55px;
+	font-size: 24px;
+}
+
+.input1 {
+	width: 78px;
+	height: 19px;
+	position: absolute;
+	left: 10px;
+	top: 45px;
+	 
+	text-align: center;
+	font-size: 16px;
+	letter-spacing: 0;
+}
+
+.MenuBlock {
+	box-shadow: 5px 15px 30px rgba(0, 0, 0, 0.7);
+	background-color: rgba(255, 222, 95, 1);
+	width: 1285px;
+	height: 1490px;
+	position: absolute;
+	left: 317px;
+	top: 130px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.HereToOrderBlock {
+	box-shadow: 7px 10px 40px rgba(0, 0, 0, 0.800000011920929);
+	background-color: rgba(255, 255, 255, 1);
+	width: 644px;
+	height: 187px;
+	position: absolute;
+	left: 350px;
+	top: 100px;
+	border-top-left-radius: 50px;
+	border-top-right-radius: 50px;
+	border-bottom-left-radius: 50px;
+	border-bottom-right-radius: 50px;
+}
+
+.HereToOrder {
+	width: 562px;
+	position: absolute;
+	left: 41px;
+	top: 35px;
+	text-align: center;
+	font-size: 48px;
+}
+
+.ChickenOrder {
+	width: 250px;
+	height: 380px;
+	position: absolute;
+	left: 950px;
+	top: 409px;
+}
+
+.ChickenPrice {
+	position: absolute;
+	left: 63px;
+	top: 303px;
+	font-size: 20px;
+}
+
+.ChickenText {
+	position: absolute;
+	left: 60px;
+	top: 271px;
+	font-size: 20px;
+}
+
+.Chicken {
+	width: 250px;
+	height: 250px;
+	background-image: url(images/chicken.png);
+	background-size: cover;
+}
+
+.FriesOrder {
+	width: 250px;
+	height: 380px;
+	position: absolute;
+	left: 350px;
+	top: 409px;
+}
+
+.FriesPrice {
+	position: absolute;
+	left: 60px;
+	top: 303px;
+	font-size: 20px;
+}
+
+.FriesText {
+	position: absolute;
+	left: 60px;
+	top: 271px;
+	font-size: 20px;
+}
+
+.Fries {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	background-image: url(images/fries.png);
+	background-size: cover;
+}
+
+.ShaurmaOrder {
+	width: 250px;
+	height: 380px;
+	position: absolute;
+	left: 650px;
+	top: 409px;
+}
+
+.ShaurmaPrice {
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	left: 60px;
+	top: 303px;
+	font-size: 20px;
+}
+
+.ShaurmaText {
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	left: 60px;
+	top: 271px;
+	font-size: 20px;
+}
+
+.Shaurma {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	background-image: url(images/shaurma.png);
+	background-size: cover;
+}
+
+.BurgerOrder {
+	width: 250px;
+	height: 380px;
+	position: absolute;
+	left: 50px;
+	top: 409px;
+}
+
+.Burger {
+	width: 250px;
+	height: 250px;
+	background-image: url(images/burger.png);
+	background-size: cover;
+}
+
+.burgerText {
+	position: absolute;
+	left: 60px;
+	top: 271px;
+	font-size: 20px;
+}
+
+.burgerPrice {
+	position: absolute;
+	left: 60px;
+	top: 303px;
+	font-size: 20px;
+}
+
+.header {
+	background-color: rgba(255, 181, 95, 1);
+	width: 1920px;
+	height: 130px;
+	position: absolute;
+	top: 0px;
+	border-radius: 10px;
+	border-style: solid;
+	border-width: medium;
+}
+
+.LogoHeader {
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	left: 30px;
+	top: 20px;
+}
+
+.LogoHeaderP1 {
+	width: 67px;
+	height: 63px;
+	position: absolute;
+	top: 36px;
+	background-image: url(images/LogoP1.png);
+	background-size: cover;
+}
+
+.LogoHeaderP2 {
+	width: 90px;
+	height: 90px;
+	position: absolute;
+	left: 3px;
+	background-image: url(images/LogoP2.png);
+	background-size: cover;
+}
+
+.MainRef {
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	left: 169px;
+	top: 55px;
+	font-size: 24px;
+}
+
+.divider {
+	position: absolute;
+	left: 233px;
+	top: 55px;
+	font-size: 24px;
+}
+
+.OrderingRef {
+	color: rgba(0, 0, 0, 1);
+	position: absolute;
+	left: 251px;
+	top: 55px;
+	font-size: 24px;
+}
+
+.footer {
+	width: 1920px;
+	height: 130px;
+	position: absolute;
+	left: 0px;
+	top: 1490px;
+	background-color: rgba(255, 181, 95, 1);
+	border-style: solid;
+	border-width: medium;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.footerAboutUs {
+	width: 1920px;
+	height: 130px;
+	position: absolute;
+	left: 0px;
+	top: 2035px;
+	background-color: rgba(255, 181, 95, 1);
+	border-style: solid;
+	border-width: medium;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+}
+
+.footerPhoneNumber {
+	position: absolute;
+	left: 195px;
+	top: 65px;
+}
+
+.footerAdress {
+	position: absolute;
+	left: 28px;
+	top: 30px;
+}
+
+.footerEmail {
+	position: absolute;
+	left: 28px;
+	top: 65px;
+}
+

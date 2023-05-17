@@ -1,0 +1,60 @@
+<html lang="en">
+          <head>
+            <meta charset="utf-8">
+          
+            <title>Bubaleh shaurma</title>
+            <meta name="description" content="Bubaleh shaurma">
+            <meta name="author" content="Diasamidze Bubaleh">
+            <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="styles.css">
+            
+            <style>
+              body {background: #E5E5E5; }
+            </style>
+          </head>
+
+          <body>
+              <div class="pagecoverOrder"></div>
+              <div class="MenuBlock">
+                  <div class="Shawerma"></div>
+                  <div class="ShawermaInfo">
+                      <div class="NameBlock">
+                          <span class="Name">Mahentohen</span>
+                          <span class="Price">100.00 UAH</span>
+                      </div>
+                      <span class="Amount">Amount</span>
+                      <input type="text" class="AmountInput" />
+                      <div class="AddToCartButton">
+                          <span class="AddToCart">Add to cart</span>
+                      </div>
+                  </div>
+              </div>
+              <span class="Description">Description</span>
+              <nav class="header">
+                  <div class="LogoHeader">
+                      <div class="LogoHeaderP1"></div>
+                      <div class="LogoHeaderP2"></div>
+                  </div>
+                  <a href="./main.html" class="MainRef">Main</a>
+                  <span class="divider">/</span>
+                  <a href="./shop.html" class="OrderingRef">Ordering</a>
+                  <span class="divider2">/</span>
+                  <span class="HeaderMahentohen">Mahentohen</span>
+              </nav>
+              <footer class="footer">
+                  <span class="footerPhoneNumber">853-195-9918</span>
+                  <span class="footerAdress">500 Terry Francine Street, San Francisco, CA 94158</span>
+                  <span class="footerEmail">info@bubaleh.com</span>
+              </footer>
+              <script>
+                var addToCartButton = document.querySelector('.AddToCartButton');
+                addToCartButton.addEventListener('click', function() {
+                    var result = confirm('Ви впевнені, що хочете замовити?');
+                    if (result) {
+                    } else {
+                    }
+                });
+              </script>
+          </body>
+</html>

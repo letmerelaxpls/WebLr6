@@ -1,0 +1,104 @@
+<html lang="en">
+          <head>
+            <meta charset="utf-8">
+          
+            <title>Bubaleh shop</title>
+            <meta name="description" content="Bubaleh shop">
+            <meta name="author" content="Diasamidze Bubaleh">
+            <link href="https://fonts.googleapis.com/css?family=Inter&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="styles.css">
+            
+            <style>
+              body {background: #E5E5E5; }
+            </style>
+          
+          </head>
+          
+          <body>
+              <div class="pagecoverShop"></div>
+              <div class="MenuBlock">
+                  <div class="HereToOrderBlock">
+                      <span class="HereToOrder">Here you can order your food</span>
+                  </div>
+                  <div class="BurgerOrder">
+                      <div class="Burger"></div>
+                      <span class="burgerText">Mega burger</span>
+                      <span class="burgerPrice">80.00 UAH</span>
+                  </div>
+                  <div class=FriesOrder>
+                      <div class="Fries"></div>
+                      <span class="FriesText">French fries</span>
+                      <span class="FriesPrice">40.00 UAH</span>
+                  </div>
+                  <a href="./shaurma.html" class="ShaurmaOrder">
+                      <span class="Shaurma"></span>
+                      <span class="ShaurmaText">Mahentohen</span>
+                      <span class="ShaurmaPrice">100.00 UAH</span>
+                  </a>
+                  <div class="ChickenOrder">
+                      <div class="Chicken"></div>
+                      <span class="ChickenText">Chicken nuggets</span>
+                      <span class="ChickenPrice">60.00 UAH</span>
+                  </div>
+              </div>
+              <nav class="header">
+                  <div class="LogoHeader">
+                      <div class="LogoHeaderP1"></div>
+                      <div class="LogoHeaderP2"></div>
+                  </div>
+                  <a href="./main.html" class="MainRef">Main</a>
+                  <span class="divider">/</span>
+                  <span class="OrderingRef">Ordering</span>
+              </nav>
+              <footer class="footer">
+                  <span class="footerPhoneNumber">853-195-9918</span>
+                  <span class="footerAdress">500 Terry Francine Street, San Francisco, CA 94158</span>
+                  <span class="footerEmail">info@bubaleh.com</span>
+              </footer>
+
+              <script>
+                  function changeColor(element) {
+                      element.style.transition = 'background-color 0.5s';
+                      element.style.backgroundColor = '#ffa200b8';
+                  }
+
+                  function resetColor(element) {
+                      element.style.transition = 'background-color 0.5s';
+                      element.style.backgroundColor = '';
+                  }
+
+                  var burgerOrder = document.querySelector('.BurgerOrder');
+                  burgerOrder.addEventListener('mouseenter', function () {
+                      changeColor(burgerOrder);
+                  });
+                  burgerOrder.addEventListener('mouseleave', function () {
+                      resetColor(burgerOrder);
+                  });
+
+                  var friesOrder = document.querySelector('.FriesOrder');
+                  friesOrder.addEventListener('mouseenter', function () {
+                      changeColor(friesOrder);
+                  });
+                  friesOrder.addEventListener('mouseleave', function () {
+                      resetColor(friesOrder);
+                  });
+
+                  var shaurmaOrder = document.querySelector('.ShaurmaOrder');
+                  shaurmaOrder.addEventListener('mouseenter', function () {
+                      changeColor(shaurmaOrder);
+                  });
+                  shaurmaOrder.addEventListener('mouseleave', function () {
+                      resetColor(shaurmaOrder);
+                  });
+
+                  var chickenOrder = document.querySelector('.ChickenOrder');
+                  chickenOrder.addEventListener('mouseenter', function () {
+                      changeColor(chickenOrder);
+                  });
+                  chickenOrder.addEventListener('mouseleave', function () {
+                      resetColor(chickenOrder);
+                  });
+              </script>
+          </body>
+ </html>
